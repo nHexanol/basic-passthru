@@ -1,5 +1,5 @@
 require('http').createServer(function (req, res) {
-  if (req.url === 'api/general/warLogger') {
+  if (req.url === '/api/general/warLogger') {
     var chunk = '';
     req.on('data', function (data) {
       chunk += data;
